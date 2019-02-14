@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6209D79D21EDFA02000D6546"
-               BuildableName = "zorrito_v2.app"
-               BlueprintName = "zorrito_v2"
-               ReferencedContainer = "container:zorrito_v2.xcodeproj">
+               BlueprintIdentifier = "620B0B5221F8CCB800E3499D"
+               BuildableName = "testing App.app"
+               BlueprintName = "testing App"
+               ReferencedContainer = "container:testing App.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6209D79D21EDFA02000D6546"
-            BuildableName = "zorrito_v2.app"
-            BlueprintName = "zorrito_v2"
-            ReferencedContainer = "container:zorrito_v2.xcodeproj">
+            BlueprintIdentifier = "620B0B5221F8CCB800E3499D"
+            BuildableName = "testing App.app"
+            BlueprintName = "testing App"
+            ReferencedContainer = "container:testing App.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6209D79D21EDFA02000D6546"
-            BuildableName = "zorrito_v2.app"
-            BlueprintName = "zorrito_v2"
-            ReferencedContainer = "container:zorrito_v2.xcodeproj">
+            BlueprintIdentifier = "620B0B5221F8CCB800E3499D"
+            BuildableName = "testing App.app"
+            BlueprintName = "testing App"
+            ReferencedContainer = "container:testing App.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6209D79D21EDFA02000D6546"
-            BuildableName = "zorrito_v2.app"
-            BlueprintName = "zorrito_v2"
-            ReferencedContainer = "container:zorrito_v2.xcodeproj">
+            BlueprintIdentifier = "620B0B5221F8CCB800E3499D"
+            BuildableName = "testing App.app"
+            BlueprintName = "testing App"
+            ReferencedContainer = "container:testing App.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
