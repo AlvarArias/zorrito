@@ -12,5 +12,19 @@ class imagenCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var ImgCell: UIImageView!
     
+    override var isSelected: Bool{
+        didSet{
+            if self.isSelected
+            {
+                //This block will be executed whenever the cell’s selection state is set to true (i.e For the selected cell)
+                print("Select")
+            }
+            else
+            {
+                //This block will be executed whenever the cell’s selection state is set to false (i.e For the rest of the cells)
+            
+            }
+        }
+    }
     
 }

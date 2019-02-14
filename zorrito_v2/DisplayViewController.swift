@@ -8,6 +8,10 @@
 
 import UIKit
 
+ var imageArray = [UIImage]()
+
+
+
 class DisplayViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     @available(iOS 6.0, *)
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -31,13 +35,14 @@ class DisplayViewController: UIViewController,UICollectionViewDelegate,UICollect
     
     @IBOutlet weak var myScrollView: UIScrollView!
     
-    var imageArray = [UIImage]()
+   // Var image Array was here
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
       
+       // imageArray was here
         imageArray = [#imageLiteral(resourceName: "images"),#imageLiteral(resourceName: "images-5"),#imageLiteral(resourceName: "images-2"),#imageLiteral(resourceName: "images-4"),#imageLiteral(resourceName: "images-6"),#imageLiteral(resourceName: "images-3"),#imageLiteral(resourceName: "images-7")]
-        
    
         
         // Do any additional setup after loading the view.
@@ -63,6 +68,7 @@ class DisplayViewController: UIViewController,UICollectionViewDelegate,UICollect
         return cell
     }
 
+  
     /*
     // MARK: - Navigation
 
