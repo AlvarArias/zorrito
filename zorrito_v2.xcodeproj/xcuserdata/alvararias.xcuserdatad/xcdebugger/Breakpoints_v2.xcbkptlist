@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "zorrito_v2/DisplayViewController.swift"
-            timestampString = "571846916.2815551"
+            timestampString = "571847923.811664"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "DisplayViewController"
             landmarkType = "3">
          </BreakpointContent>

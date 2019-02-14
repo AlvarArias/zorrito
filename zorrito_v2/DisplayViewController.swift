@@ -10,8 +10,6 @@ import UIKit
 
  var imageArray = [UIImage]()
 
-
-
 class DisplayViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     @available(iOS 6.0, *)
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -64,6 +62,7 @@ class DisplayViewController: UIViewController,UICollectionViewDelegate,UICollect
         imagenCollectionViewCell
 
        cell.ImgCell.image = imageArray[indexPath.row]
+       
         
         return cell
     }
