@@ -146,7 +146,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imagenCollectionViewCell" id="b6H-ex-B5a">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imagenCollectionViewCell" id="b6H-ex-B5a" customClass="imagenCollectionViewCell" customModule="zorrito_v2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1.5" width="76" height="108"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -162,6 +162,9 @@
                                             <constraint firstItem="Hd5-eT-EBd" firstAttribute="centerX" secondItem="b6H-ex-B5a" secondAttribute="centerX" id="j9K-4i-qOQ"/>
                                             <constraint firstItem="Hd5-eT-EBd" firstAttribute="centerY" secondItem="b6H-ex-B5a" secondAttribute="centerY" id="qJN-7E-egy"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="ImgCell" destination="Hd5-eT-EBd" id="z06-KG-sSX"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -169,7 +172,7 @@
                                     <outlet property="delegate" destination="xSe-3B-fhP" id="xNP-c3-dM7"/>
                                 </connections>
                             </collectionView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctW-zh-Bh5">
+                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctW-zh-Bh5">
                                 <rect key="frame" x="112" y="184" width="307" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

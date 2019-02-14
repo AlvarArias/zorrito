@@ -36,7 +36,7 @@ class DisplayViewController: UIViewController,UICollectionViewDelegate,UICollect
     override func viewDidLoad() {
         super.viewDidLoad()
       
-        imageArray = [#imageLiteral(resourceName: "images"),#imageLiteral(resourceName: "images-5"),#imageLiteral(resourceName: "images-2"),#imageLiteral(resourceName: "images-4"),#imageLiteral(resourceName: "images-6")]
+        imageArray = [#imageLiteral(resourceName: "images"),#imageLiteral(resourceName: "images-5"),#imageLiteral(resourceName: "images-2"),#imageLiteral(resourceName: "images-4"),#imageLiteral(resourceName: "images-6"),#imageLiteral(resourceName: "images-3"),#imageLiteral(resourceName: "images-7")]
         
    
         
@@ -58,7 +58,7 @@ class DisplayViewController: UIViewController,UICollectionViewDelegate,UICollect
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imagenCollectionViewCell", for: indexPath) as!
         imagenCollectionViewCell
 
-  //      cell.imagen.image = imageArray[indexPath.row]
+       cell.ImgCell.image = imageArray[indexPath.row]
         
         return cell
     }
