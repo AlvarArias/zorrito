@@ -40,7 +40,7 @@ class DisplayViewController: UIViewController,UICollectionViewDelegate,UICollect
         super.viewDidLoad()
       
        // imageArray was here
-        imageArray = [#imageLiteral(resourceName: "images"),#imageLiteral(resourceName: "images-5"),#imageLiteral(resourceName: "images-2"),#imageLiteral(resourceName: "images-4"),#imageLiteral(resourceName: "images-6"),#imageLiteral(resourceName: "images-3"),#imageLiteral(resourceName: "images-7")]
+        imageArray = [#imageLiteral(resourceName: "images"),#imageLiteral(resourceName: "images-5"),#imageLiteral(resourceName: "images-2"),#imageLiteral(resourceName: "images-4"),#imageLiteral(resourceName: "images-6"),#imageLiteral(resourceName: "images-3"),#imageLiteral(resourceName: "images-7"),#imageLiteral(resourceName: "images-8")]
    
         
         
