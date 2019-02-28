@@ -14,7 +14,7 @@ var num = 0
 class ViewController: UIViewController {
     
     // botones de categorias
-    @IBOutlet weak var boton1: UIButton!
+    @IBOutlet weak var boton1: SpringButton!
     @IBOutlet weak var boton2: UIButton!
     @IBOutlet weak var boton3: UIButton!
     @IBOutlet weak var boton4: UIButton!
