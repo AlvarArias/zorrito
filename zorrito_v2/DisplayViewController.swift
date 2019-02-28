@@ -43,6 +43,7 @@ class DisplayViewController: UIViewController,UICollectionViewDelegate,UICollect
         imageArray = [#imageLiteral(resourceName: "images"),#imageLiteral(resourceName: "images-5"),#imageLiteral(resourceName: "images-2"),#imageLiteral(resourceName: "images-4"),#imageLiteral(resourceName: "images-6"),#imageLiteral(resourceName: "images-3"),#imageLiteral(resourceName: "images-7")]
    
         
+        
         // Do any additional setup after loading the view.
     }
 
@@ -57,12 +58,16 @@ class DisplayViewController: UIViewController,UICollectionViewDelegate,UICollect
     }
 */
     
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "imagenCollectionViewCell", for: indexPath) as!
         imagenCollectionViewCell
 
        cell.ImgCell.image = imageArray[indexPath.row]
-       
+
+        cell.ImgCell.backgroundColor = #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1)
+        
+        //cell.ImgCell.backgroundColor = UIColor.clear.withAlphaComponent(0)
         
         return cell
     }

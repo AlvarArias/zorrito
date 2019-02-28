@@ -150,35 +150,36 @@
                                 <rect key="frame" x="472" y="232" width="64" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sMJ-gO-K79">
-                                <rect key="frame" x="148" y="76" width="271" height="111"/>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sMJ-gO-K79">
+                                <rect key="frame" x="84" y="60" width="400" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="193" id="sRb-QH-EMI"/>
+                                    <constraint firstAttribute="width" constant="400" id="sRb-QH-EMI"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MZB-bl-lbb">
-                                    <size key="itemSize" width="76" height="108"/>
+                                    <size key="itemSize" width="200" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imagenCollectionViewCell" id="b6H-ex-B5a" customClass="imagenCollectionViewCell" customModule="zorrito_v2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1.5" width="76" height="108"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="76" height="108"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hd5-eT-EBd">
-                                                    <rect key="frame" x="0.0" y="0.0" width="70" height="110"/>
+                                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hd5-eT-EBd" customClass="SpringImageView" customModule="zorrito_v2" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="Hd5-eT-EBd" firstAttribute="centerX" secondItem="b6H-ex-B5a" secondAttribute="centerX" id="j9K-4i-qOQ"/>
-                                            <constraint firstItem="Hd5-eT-EBd" firstAttribute="centerY" secondItem="b6H-ex-B5a" secondAttribute="centerY" id="qJN-7E-egy"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hd5-eT-EBd" secondAttribute="trailing" id="1KK-6D-b62"/>
+                                            <constraint firstItem="Hd5-eT-EBd" firstAttribute="leading" secondItem="b6H-ex-B5a" secondAttribute="leading" id="HDd-Xj-NjV"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hd5-eT-EBd" secondAttribute="bottom" id="IcQ-5W-1af"/>
+                                            <constraint firstItem="Hd5-eT-EBd" firstAttribute="top" secondItem="b6H-ex-B5a" secondAttribute="top" id="zRK-Y5-THd"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="ImgCell" destination="Hd5-eT-EBd" id="z06-KG-sSX"/>
@@ -190,17 +191,12 @@
                                     <outlet property="delegate" destination="xSe-3B-fhP" id="xNP-c3-dM7"/>
                                 </connections>
                             </collectionView>
-                            <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctW-zh-Bh5">
-                                <rect key="frame" x="112" y="184" width="307" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99807029960000004" green="0.90039545300000001" blue="0.59123235939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sMJ-gO-K79" firstAttribute="leading" secondItem="Etq-KC-Yn8" secondAttribute="leading" constant="133" id="DaY-2Q-cvG"/>
-                            <constraint firstItem="uKR-ac-V4A" firstAttribute="top" secondItem="sMJ-gO-K79" secondAttribute="bottom" constant="133" id="TOs-hq-Gpw"/>
-                            <constraint firstItem="sMJ-gO-K79" firstAttribute="top" secondItem="1tt-Dm-GuH" secondAttribute="bottom" constant="56" id="bdy-MH-iOS"/>
+                            <constraint firstItem="sMJ-gO-K79" firstAttribute="leading" secondItem="Etq-KC-Yn8" secondAttribute="leading" constant="84" id="DaY-2Q-cvG"/>
+                            <constraint firstItem="uKR-ac-V4A" firstAttribute="top" secondItem="sMJ-gO-K79" secondAttribute="bottom" constant="60" id="TOs-hq-Gpw"/>
+                            <constraint firstItem="sMJ-gO-K79" firstAttribute="top" secondItem="1tt-Dm-GuH" secondAttribute="bottom" constant="40" id="bdy-MH-iOS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -208,7 +204,6 @@
                         <outlet property="imgCateg" destination="9at-IL-jPZ" id="yrQ-nf-zbL"/>
                         <outlet property="imgPunt" destination="uVt-q9-foL" id="Obt-mD-XQp"/>
                         <outlet property="imgZorrito" destination="tyl-Ed-WYo" id="ioz-CO-mYO"/>
-                        <outlet property="myScrollView" destination="ctW-zh-Bh5" id="ZMH-8i-G9j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SOr-Kn-CLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
