@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17D47" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="landscape">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,87 +20,166 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vl-yY-rBW" customClass="SpringButton" customModule="zorrito_v2" customModuleProvider="target">
-                                <rect key="frame" x="96" y="76" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 1"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
-                                        <real key="value" value="4"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="clickBoton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NeL-hx-bxk"/>
-                                    <segue destination="xSe-3B-fhP" kind="show" id="Lp9-3C-H7D"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAg-xG-dvw">
-                                <rect key="frame" x="271" y="76" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oO-7a-BxX">
-                                <rect key="frame" x="434" y="76" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 3"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kk-9v-I9q">
-                                <rect key="frame" x="96" y="145" width="60" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 4"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djs-gf-gIl">
-                                <rect key="frame" x="271" y="145" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 5"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orC-Qa-EN4">
-                                <rect key="frame" x="434" y="145" width="59" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 6"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr8-lg-7YX">
-                                <rect key="frame" x="271" y="229" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 8"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igZ-hu-T4E">
-                                <rect key="frame" x="97" y="229" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 7"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label Zorrito " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBT-SV-qMh">
-                                <rect key="frame" x="233" y="20" width="103" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mj2-yH-jQP">
+                                <rect key="frame" x="178" y="107.33333333333331" width="380" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="2Ot-LT-iP9" userLabel="L1">
+                                        <rect key="frame" x="0.0" y="0.0" width="380" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vl-yY-rBW" customClass="SpringButton" customModule="zorrito_v2" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
+                                                <state key="normal" image="paron50x50"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="pop"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="x">
+                                                        <real key="value" value="-200"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="y">
+                                                        <real key="value" value="200"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="easeIn"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickBoton1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NeL-hx-bxk"/>
+                                                    <segue destination="xSe-3B-fhP" kind="show" id="Lp9-3C-H7D"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAg-xG-dvw" customClass="SpringButton" customModule="zorrito_v2" customModuleProvider="target">
+                                                <rect key="frame" x="160" y="0.0" width="60" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <state key="normal" image="apelsin50x50">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="wobble"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="x">
+                                                        <real key="value" value="200"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="y">
+                                                        <real key="value" value="200"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="curve" value="spring"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickBoton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEw-gt-qm1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oO-7a-BxX" customClass="SpringButton" customModule="zorrito_v2" customModuleProvider="target">
+                                                <rect key="frame" x="320" y="0.0" width="60" height="50"/>
+                                                <state key="normal" image="sandia"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="NO"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickBoton3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3X5-bV-shG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="LB5-p4-wgS" userLabel=" L2">
+                                        <rect key="frame" x="0.0" y="75.000000000000014" width="380" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kk-9v-I9q">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
+                                                <state key="normal" title="Button 4"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djs-gf-gIl">
+                                                <rect key="frame" x="160" y="0.0" width="60" height="50"/>
+                                                <state key="normal" title="Button 5"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orC-Qa-EN4">
+                                                <rect key="frame" x="320" y="0.0" width="60" height="50"/>
+                                                <state key="normal" title="Button 6"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="5SD-2m-AJ9" userLabel="L3">
+                                        <rect key="frame" x="0.0" y="150" width="380" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igZ-hu-T4E">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="50"/>
+                                                <state key="normal" title="Button 7"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr8-lg-7YX">
+                                                <rect key="frame" x="160" y="0.0" width="60" height="50"/>
+                                                <state key="normal" title="Button 8"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fth-hj-kjH">
+                                                <rect key="frame" x="320" y="0.0" width="60" height="50"/>
+                                                <state key="normal" title="Button 9"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label Zorrito " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBT-SV-qMh">
+                                <rect key="frame" x="317" y="20" width="102.33333333333331" height="21"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CBT-SV-qMh" secondAttribute="height" multiplier="34:7" id="Aho-AX-PbN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-pp-g9K">
-                                <rect key="frame" x="10" y="241" width="77" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-2" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-pp-g9K" customClass="SpringImageView" customModule="zorrito_v2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="323" width="77" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="2QF-0V-OYN"/>
+                                    <constraint firstAttribute="width" constant="77" id="ehy-bT-U8G"/>
+                                    <constraint firstAttribute="width" secondItem="uJx-pp-g9K" secondAttribute="height" multiplier="77:71" id="oUz-LI-lIb"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fth-hj-kjH">
-                                <rect key="frame" x="434" y="229" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 9"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uJx-pp-g9K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Gh6-1H-IvL"/>
+                            <constraint firstItem="CBT-SV-qMh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="KHK-eH-M71"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uJx-pp-g9K" secondAttribute="bottom" constant="20" id="KZR-j8-ApK"/>
+                            <constraint firstItem="uJx-pp-g9K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="dpC-C5-FnO"/>
+                            <constraint firstItem="mj2-yH-jQP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nd4-Rt-tfK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uJx-pp-g9K" secondAttribute="bottom" constant="20" id="wi0-nR-GTi"/>
+                            <constraint firstItem="CBT-SV-qMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yn9-vW-qVC"/>
+                            <constraint firstItem="mj2-yH-jQP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ypG-ea-MXt"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="boton1" destination="2Vl-yY-rBW" id="bUd-pK-dwq"/>
@@ -116,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.25352112676056" y="123.75"/>
+            <point key="canvasLocation" x="116" y="-2046"/>
         </scene>
         <!--Display View Controller-->
         <scene sceneID="sC2-wa-d9f">
@@ -127,78 +208,113 @@
                         <viewControllerLayoutGuide type="bottom" id="uKR-ac-V4A"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Etq-KC-Yn8">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dob-wV-KqP">
-                                <rect key="frame" x="452" y="39" width="84" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uVt-q9-foL">
+                                <rect key="frame" x="248" y="12" width="240" height="49"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="9Qe-CL-2hI"/>
+                                    <constraint firstAttribute="width" constant="240" id="h2Q-Ot-mfq"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EdM-We-SrU">
+                                <rect key="frame" x="5" y="97" width="726" height="220"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nja-s0-vc6">
+                                        <rect key="frame" x="0.0" y="0.0" width="726" height="220"/>
+                                        <subviews>
+                                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sMJ-gO-K79">
+                                                <rect key="frame" x="0.0" y="0.0" width="726" height="220"/>
+                                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="220" id="Kic-Jk-JJQ"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MZB-bl-lbb">
+                                                    <size key="itemSize" width="200" height="200"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imagenCollectionViewCell" id="b6H-ex-B5a" customClass="imagenCollectionViewCell" customModule="zorrito_v2" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="10" width="200" height="200"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hd5-eT-EBd" customClass="SpringImageView" customModule="zorrito_v2" customModuleProvider="target">
+                                                                    <rect key="frame" x="25" y="25" width="150" height="150"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                        </view>
+                                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Hd5-eT-EBd" secondAttribute="trailing" id="1KK-6D-b62"/>
+                                                            <constraint firstItem="Hd5-eT-EBd" firstAttribute="leading" secondItem="b6H-ex-B5a" secondAttribute="leading" id="HDd-Xj-NjV"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Hd5-eT-EBd" secondAttribute="bottom" id="IcQ-5W-1af"/>
+                                                            <constraint firstItem="Hd5-eT-EBd" firstAttribute="top" secondItem="b6H-ex-B5a" secondAttribute="top" id="zRK-Y5-THd"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="ImgCell" destination="Hd5-eT-EBd" id="z06-KG-sSX"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="xSe-3B-fhP" id="SHD-3d-hae"/>
+                                                    <outlet property="delegate" destination="xSe-3B-fhP" id="xNP-c3-dM7"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dob-wV-KqP">
+                                <rect key="frame" x="632" y="20" width="84" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="MOC-0v-WRG"/>
+                                    <constraint firstAttribute="height" constant="30" id="gKw-1u-Nhl"/>
+                                </constraints>
                                 <state key="normal" title="Button Back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="4Wi-t9-B07"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uVt-q9-foL">
-                                <rect key="frame" x="164" y="28" width="240" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9at-IL-jPZ">
-                                <rect key="frame" x="32" y="28" width="64" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tyl-Ed-WYo">
-                                <rect key="frame" x="472" y="232" width="64" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sMJ-gO-K79">
-                                <rect key="frame" x="84" y="60" width="400" height="200"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9at-IL-jPZ">
+                                <rect key="frame" x="8" y="1" width="64" height="49"/>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="sRb-QH-EMI"/>
+                                    <constraint firstAttribute="height" constant="49" id="27a-oo-f43"/>
+                                    <constraint firstAttribute="width" constant="64" id="MSB-Oz-kmK"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MZB-bl-lbb">
-                                    <size key="itemSize" width="200" height="200"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="imagenCollectionViewCell" id="b6H-ex-B5a" customClass="imagenCollectionViewCell" customModule="zorrito_v2" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hd5-eT-EBd" customClass="SpringImageView" customModule="zorrito_v2" customModuleProvider="target">
-                                                    <rect key="frame" x="25" y="25" width="150" height="150"/>
-                                                </imageView>
-                                            </subviews>
-                                        </view>
-                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="Hd5-eT-EBd" secondAttribute="trailing" id="1KK-6D-b62"/>
-                                            <constraint firstItem="Hd5-eT-EBd" firstAttribute="leading" secondItem="b6H-ex-B5a" secondAttribute="leading" id="HDd-Xj-NjV"/>
-                                            <constraint firstAttribute="bottom" secondItem="Hd5-eT-EBd" secondAttribute="bottom" id="IcQ-5W-1af"/>
-                                            <constraint firstItem="Hd5-eT-EBd" firstAttribute="top" secondItem="b6H-ex-B5a" secondAttribute="top" id="zRK-Y5-THd"/>
-                                        </constraints>
-                                        <connections>
-                                            <outlet property="ImgCell" destination="Hd5-eT-EBd" id="z06-KG-sSX"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="xSe-3B-fhP" id="SHD-3d-hae"/>
-                                    <outlet property="delegate" destination="xSe-3B-fhP" id="xNP-c3-dM7"/>
-                                </connections>
-                            </collectionView>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tyl-Ed-WYo">
+                                <rect key="frame" x="652" y="345" width="64" height="49"/>
+                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="4Yn-au-GCc"/>
+                                    <constraint firstAttribute="width" constant="64" id="Szn-gR-cuV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99807029960000004" green="0.90039545300000001" blue="0.59123235939999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="sMJ-gO-K79" firstAttribute="leading" secondItem="Etq-KC-Yn8" secondAttribute="leading" constant="84" id="DaY-2Q-cvG"/>
-                            <constraint firstItem="uKR-ac-V4A" firstAttribute="top" secondItem="sMJ-gO-K79" secondAttribute="bottom" constant="60" id="TOs-hq-Gpw"/>
-                            <constraint firstItem="sMJ-gO-K79" firstAttribute="top" secondItem="1tt-Dm-GuH" secondAttribute="bottom" constant="40" id="bdy-MH-iOS"/>
+                            <constraint firstItem="dob-wV-KqP" firstAttribute="top" secondItem="Etq-KC-Yn8" secondAttribute="topMargin" constant="20" id="7ZY-CZ-lXE"/>
+                            <constraint firstAttribute="bottom" secondItem="tyl-Ed-WYo" secondAttribute="bottom" constant="20" id="9Xa-gw-DAG"/>
+                            <constraint firstItem="9at-IL-jPZ" firstAttribute="leading" secondItem="Etq-KC-Yn8" secondAttribute="leading" constant="8" id="IFc-m0-VCl"/>
+                            <constraint firstItem="EdM-We-SrU" firstAttribute="leading" secondItem="Etq-KC-Yn8" secondAttribute="leading" constant="5" id="OTI-9b-fq3"/>
+                            <constraint firstItem="EdM-We-SrU" firstAttribute="centerY" secondItem="Etq-KC-Yn8" secondAttribute="centerY" id="OvA-Mb-ZTp"/>
+                            <constraint firstItem="uVt-q9-foL" firstAttribute="top" secondItem="Etq-KC-Yn8" secondAttribute="topMargin" constant="12" id="R9B-qn-heY"/>
+                            <constraint firstItem="9at-IL-jPZ" firstAttribute="top" secondItem="1tt-Dm-GuH" secondAttribute="bottom" constant="1" id="REU-Kj-fK0"/>
+                            <constraint firstAttribute="trailing" secondItem="tyl-Ed-WYo" secondAttribute="trailing" constant="20" id="byb-N4-IiZ"/>
+                            <constraint firstItem="uVt-q9-foL" firstAttribute="centerX" secondItem="Etq-KC-Yn8" secondAttribute="centerX" id="gjV-Aj-N7s"/>
+                            <constraint firstItem="dob-wV-KqP" firstAttribute="trailing" secondItem="Etq-KC-Yn8" secondAttribute="trailingMargin" id="pMy-V5-rFo"/>
+                            <constraint firstAttribute="trailing" secondItem="EdM-We-SrU" secondAttribute="trailing" constant="5" id="pcO-xf-saI"/>
+                            <constraint firstItem="EdM-We-SrU" firstAttribute="centerX" secondItem="Etq-KC-Yn8" secondAttribute="centerX" id="rFH-Y2-Fv6"/>
                         </constraints>
                     </view>
                     <connections>
@@ -212,23 +328,11 @@
             </objects>
             <point key="canvasLocation" x="117.25352112676056" y="995.625"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="aaw-rU-Zz4">
-            <objects>
-                <viewController id="wg4-ko-Wfy" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JDL-fT-Rrh"/>
-                        <viewControllerLayoutGuide type="bottom" id="Zrd-9o-PvN"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jba-ip-MQi">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dZn-Oo-7JQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="106" y="1800"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="apelsin50x50" width="50" height="50"/>
+        <image name="images-2" width="225" height="225"/>
+        <image name="paron50x50" width="50" height="50"/>
+        <image name="sandia" width="50" height="50"/>
+    </resources>
 </document>

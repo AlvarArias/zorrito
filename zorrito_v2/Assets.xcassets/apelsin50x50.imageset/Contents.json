@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "päron.png",
+      "filename" : "apelsin50x50.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "päron@2x.png",
       "scale" : "2x"
     },
     {
